@@ -5,6 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas</title>
 
+<!--Estilos-->
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    header {
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 24px;
+    }
+    .container {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+    h2 {
+        color: #333;
+        border-bottom: 2px solid #ff9800;
+        padding-bottom: 5px;
+    }
+    p {
+        line-height: 1.6;
+    }
+    code {
+        background: #ddd;
+        padding: 2px 4px;
+        border-radius: 4px;
+    }
+</style>
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
@@ -42,6 +82,76 @@
         </div>
     </nav>
 <!--Navbar-->
+
+<header>Conceptos de Desarrollo Web</header>
+ 
+<div class="container m-5">
+    <h2>HTML y CSS</h2>
+    
+    <h3>¿Qué es HTML y cuál es su función principal en el desarrollo web?</h3>
+    <p>HTML (HyperText Markup Language) es el lenguaje utilizado para estructurar el contenido de una página web. Define elementos como encabezados, párrafos, imágenes y enlaces.</p>
+ 
+    <h3>¿Qué son las etiquetas HTML y cómo se utilizan?</h3>
+    <p>Las etiquetas HTML estructuran el contenido de una página. Se escriben con una apertura <code>&lt;etiqueta&gt;</code> y un cierre <code>&lt;/etiqueta&gt;</code>.</p>
+ 
+    <h3>Ejemplos de etiquetas HTML comunes</h3>
+    <ul>
+        <li><code>&lt;p&gt;</code> - Párrafo</li>
+        <li><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> - Encabezados</li>
+        <li><code>&lt;a href="url"&gt;</code> - Enlace</li>
+        <li><code>&lt;img src="imagen.jpg"&gt;</code> - Imagen</li>
+    </ul>
+ 
+    <h3>¿Qué es CSS y cómo se utiliza?</h3>
+    <p>CSS (Cascading Style Sheets) es un lenguaje que permite personalizar el diseño de una página web, definiendo colores, fuentes y posiciones.</p>
+ 
+    <h3>Ejemplo de CSS</h3>
+    <code>
+        body { background-color: #f4f4f4; color: #333; }
+    </code>
+ 
+    <h3>¿Qué es el modelo de caja (box model)?</h3>
+    <p>El modelo de caja define cómo los elementos se estructuran en la web:</p>
+    <ul>
+        <li><b>Contenido:</b> Área donde se muestra el texto o imágenes.</li>
+        <li><b>Padding:</b> Espacio interno alrededor del contenido.</li>
+        <li><b>Border:</b> Borde del elemento.</li>
+        <li><b>Margin:</b> Espacio externo alrededor del borde.</li>
+    </ul>
+ 
+    <h3>¿Qué es el diseño responsivo?</h3>
+    <p>El diseño responsivo adapta la página a diferentes pantallas mediante <code>@media</code> queries y unidades relativas.</p>
+</div>
+ 
+<!--Segundo Div-->
+
+<div class="container m-5 ">
+        <h2>JavaScript, Git y GitHub</h2>
+    
+    <h3>¿Qué es JavaScript?</h3>
+    <p>JavaScript es un lenguaje de programación que permite agregar interactividad a las páginas web.</p>
+ 
+    <h3>Ejemplo de interacción con JavaScript</h3>
+    <code>
+        document.getElementById("demo").innerHTML = "Texto cambiado";
+    </code>
+ 
+    <h3>¿Qué es Git y por qué es importante?</h3>
+    <p>Git es un sistema de control de versiones que permite rastrear cambios y colaborar en proyectos de desarrollo web.</p>
+ 
+    <h3>Comandos básicos de Git</h3>
+    <ul>
+        <li><code>git init</code> - Inicializa un repositorio.</li>
+        <li><code>git add .</code> - Agrega cambios.</li>
+        <li><code>git commit -m "Mensaje"</code> - Guarda cambios.</li>
+        <li><code>git push origin main</code> - Sube cambios al repositorio remoto.</li>
+    </ul>
+ 
+    <h3>¿Qué es GitHub?</h3>
+    <p>GitHub es una plataforma que permite almacenar repositorios Git en la nube y facilita la colaboración en proyectos web.</p>
+
+</div>
+
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
